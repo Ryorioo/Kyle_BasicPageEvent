@@ -5,39 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basic Event-Driven Webpage</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Page container -->
   <div id="pageContainer">
 
-    <!-- Student info -->
     <div id="studentInfo">
       <p>Name: Kyle R. Cabrera</p>
-      <p>Course: BSIT</p>
+      <p>Course: Bachelor of Science in Information Technology</p>
       <p>Section: 31-ITE-02</p>
       <p>Date: 8/21/2026</p>
     </div>
 
-    <!-- Heading that gets updated by the greeting/reset handlers -->
     <h1 id="mainHeading">Welcome! Enter your name below.</h1>
 
-    <!-- Name input field (source of the input event) -->
     <input type="text" id="nameInput" placeholder="Enter your name" />
 
-    <!-- Buttons (sources of click and mouseover events) -->
     <div id="buttonGroup">
       <button id="greetingButton">Display Greeting</button>
       <button id="backgroundButton">Change Background</button>
       <button id="resetButton">Reset</button>
     </div>
 
-    <!-- Message area for feedback and the live input display -->
     <p id="messageArea"></p>
 
   </div>
 
-  <!-- External JS file, deferred so the DOM is ready before it runs -->
-  <script src="script.js" defer></script>
 </body>
 </html>
